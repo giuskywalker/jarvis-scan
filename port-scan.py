@@ -1,8 +1,9 @@
 import socket
 import threading
 import queue
+from colored import fg, attr
 
-target = input("Type the ip or the url: ")
+target = input("[URL or IP]: ")
 print("")
 ip = socket.gethostbyname(target)
 
@@ -20,7 +21,7 @@ def scan():
             try:
                 s.connect((ip, port))
                 open_ports.append(port)
-                print(f"Port {port} is open!")
+                print(f"%s[Port {port} is open] ~ [{ip}:{port} may be vulnerable!] %s" % (fg('green'), attr('reset')))
             except:
                 pass
             q.task_done()
@@ -35,4 +36,4 @@ for i in range(40):
 q.join()
 
 print("")
-print("Open ports: {}".format(open_ports))
+print(f"%sOpen ports: {open_ports} %s" % (fg('blue'), attr('reset')))
