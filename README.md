@@ -1,2 +1,2 @@
 # jarvis-scan
-Jarvis scan is a complete vulnerability scanner.
+Jarvis is a port, subdomain, and directory scanner written in python.
