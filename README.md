@@ -1,2 +1,2 @@
 # jarvis-scan
-Jarvis is a port, subdomain, and directory scanner written in python.
+Jarvis is a simple port scanner written in python.
