@@ -5,4 +5,4 @@ To install the dependencies required to run the code, just type ```pip install -
 
 Usage: ```python jarvis.py urlexample.com ```
 
-![jarvis](https://user-images.githubusercontent.com/83036320/174688175-3a134e08-a9f2-4bfc-b992-ec2f6806fadb.png)
+![jarvis](https://user-images.githubusercontent.com/83036320/174903991-493f5bbb-8a2d-4a31-9dde-fb7bf72615fa.png)
