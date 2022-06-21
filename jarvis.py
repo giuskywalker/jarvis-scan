@@ -3,13 +3,15 @@ import threading
 import queue
 from colored import fg, attr
 import pyfiglet
+import sys
+
 
 jarvis = pyfiglet.figlet_format("Jarvis")
 print(jarvis)
 print("Threaded port scanner made by: Giulliano Amaral")
 print("")
 
-target = input("[URL or IP]: ")
+target = sys.argv[1]
 print("")
 ip = socket.gethostbyname(target)
 
